@@ -1,0 +1,11 @@
+mutation CustomOrderMutation($input: CustomOrderInput!) {
+  createCustomOrder(input: $input) {
+    _id
+    shopId
+    referenceId
+    itemName
+    email
+    quantity
+    details
+  }
+}

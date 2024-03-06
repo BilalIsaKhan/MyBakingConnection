@@ -1,0 +1,9 @@
+query getFlatRateFulfillmentByShopId($shopId: ID!) {
+  getFlatRateFulfillmentByShopId(shopId: $shopId) {
+    edges {
+      node {
+        _id
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+query bakers($filter: BakersFilterInput, $searchQuery: String) {
+  bakers(filter: $filter, searchQuery: $searchQuery) {
+    nodes {
+      _id
+      name
+      slug
+      description
+      shopLogoUrls {
+        primaryShopLogoUrl
+      }
+      addressBook {
+        city
+        region
+      }
+    }
+  }
+}

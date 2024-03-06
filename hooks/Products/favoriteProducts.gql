@@ -1,0 +1,59 @@
+query favoriteProducts(
+  $first: ConnectionLimitInt
+  $offset: Int
+  $sortBy: CatalogItemSortByField
+  $sortOrder: SortOrder
+) {
+  favoriteProducts(first: $first, offset: $offset, sortBy: $sortBy, sortOrder: $sortOrder) {
+    totalCount
+    edges {
+      node {
+        ... on CatalogItemProduct {
+          product {
+            _id
+            slug
+            isFavorite
+            productId
+            title
+            description
+            productAttributes {
+              attribute
+              options {
+                optionLabel
+                price
+              }
+            }
+            productListingSchedule {
+              startDate
+              endDate
+            }
+            availableFulfillmentDates
+            media {
+              priority
+              productId
+              URLs {
+                thumbnail
+                large
+                medium
+                small
+                original
+              }
+            }
+            variants {
+              variantId
+              isTaxable
+              inventoryInStock
+              pricing {
+                compareAtPrice {
+                  amount
+                  displayAmount
+                }
+                price
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+.background {
+  background: url('/Images/search-sprinkles.png');
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 767px) {
+  .background {
+    background-size: contain;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .background {
+    background-size: contain;
+    object-fit: contain;
+    background-position: center;
+  }
+}

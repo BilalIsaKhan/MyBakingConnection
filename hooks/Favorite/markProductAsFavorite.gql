@@ -1,0 +1,3 @@
+mutation markProductAsFavorite($productId: ID!, $shopId: ID!) {
+  markProductAsFavorite(productId: $productId, shopId: $shopId)
+}

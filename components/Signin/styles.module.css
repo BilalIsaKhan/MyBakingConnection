@@ -1,0 +1,11 @@
+.signIn {
+  background: url('/Images/sign-in-background.webp') center / cover no-repeat;
+}
+
+@media screen and (max-width: 767px) {
+  .signIn {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
+      url('/Images/sign-in-background.webp') center / cover no-repeat,
+      lightgray -245.438px -0.282px / 518.318% 100.038% no-repeat;
+  }
+}

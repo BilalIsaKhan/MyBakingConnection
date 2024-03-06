@@ -1,0 +1,25 @@
+query orders($shopIds: [ID], $first: ConnectionLimitInt, $offset: Int) {
+  orders(shopIds: $shopIds, first: $first, offset: $offset) {
+    totalCount
+    edges {
+      node {
+        _id
+        referenceId
+        shop {
+          name
+        }
+        summary {
+          total {
+            amount
+          }
+        }
+        updatedAt
+        account {
+          firstName
+          lastName
+          primaryEmailAddress
+        }
+      }
+    }
+  }
+}

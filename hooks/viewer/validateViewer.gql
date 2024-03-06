@@ -1,0 +1,11 @@
+query lazyViewer {
+  viewer {
+    _id
+    # validStripeConnect
+    isActiveBaker
+    isBaker
+    adminUIShops {
+      _id
+    }
+  }
+}

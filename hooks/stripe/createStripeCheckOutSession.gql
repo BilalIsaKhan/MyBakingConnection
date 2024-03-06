@@ -1,0 +1,19 @@
+mutation createStripeCheckOutSession(
+  $priceId: ID
+  $quantity: Int
+  $mode: StripeCheckoutModeEnum!
+  $subscriptionType: SubscriptionTypeEnum
+) {
+  createStripeCheckOutSession(
+    input: {
+      priceId: $priceId
+      quantity: $quantity
+      mode: $mode
+      subscriptionType: $subscriptionType
+    }
+  ) {
+    status
+    message
+    stripeData
+  }
+}

@@ -1,0 +1,5 @@
+mutation updateCustomOrderMutation($input: UpdateCustomOrderInput!) {
+  updateCustomOrder(input: $input) {
+    _id
+  }
+}

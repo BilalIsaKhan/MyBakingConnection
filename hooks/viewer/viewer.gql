@@ -1,0 +1,44 @@
+query viewer {
+  viewer {
+    _id
+    isBaker
+    isActiveBaker
+    addressBook {
+      edges {
+        node {
+          _id
+          address1
+          address2
+          city
+          company
+          country
+          fullName
+          isBillingDefault
+          isCommercial
+          isShippingDefault
+          phone
+          postal
+          region
+        }
+      }
+    }
+    firstName
+    lastName
+    state
+    validStripeConnect
+    adminUIShops {
+      _id
+    }
+    currentAddress
+    city
+    phone
+    emailRecords {
+      address
+    }
+    userId
+    username
+    name
+    picture
+    primaryEmailAddress
+  }
+}

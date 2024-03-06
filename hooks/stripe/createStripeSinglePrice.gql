@@ -1,0 +1,7 @@
+mutation createStripeSinglePrice($unitAmount: Float, $currency: String) {
+  createStripeSinglePrice(input: { unitAmount: $unitAmount, currency: $currency }) {
+    status
+    message
+    stripeData
+  }
+}

@@ -1,0 +1,10 @@
+query productCategoriesQuery {
+  productCategories {
+    totalCount
+    nodes {
+      _id
+      name
+      image
+    }
+  }
+}

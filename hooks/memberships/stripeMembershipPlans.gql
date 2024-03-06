@@ -1,0 +1,12 @@
+query stripeMembershipPlans {
+  stripeMembershipPlans {
+    _id
+    name
+    interval
+    planId
+    active
+    currency
+    product
+    unit_amount
+  }
+}
